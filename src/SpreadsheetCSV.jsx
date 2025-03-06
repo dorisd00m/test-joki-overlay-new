@@ -120,8 +120,8 @@ const SpreadsheetCSV = () => {
       <div className="max-w-[500px]">
         {loading ? (<p>loading</p>) :
           <div className="flex gap-3 text-white">
-            <div className="p-5 rounded bg-gray-600">JOKI AKUN  </div>
-            <div className="p-5 rounded border border-gray-600 text-gray-600 font-bold">
+            <div className="px-5 py-2 rounded bg-gray-600">JOKI AKUN  </div>
+            <div className="px-5 py-2 rounded border border-gray-600 text-gray-600 font-bold">
               {activeData ? activeData : "Tidak ada akun aktif"}
             </div>
           </div>
