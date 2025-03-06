@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/test-joki-overlay', // Ganti dengan nama repo
+  base: '/test-joki-overlay-new', // Ganti dengan nama repo
 });
