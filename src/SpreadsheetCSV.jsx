@@ -266,7 +266,7 @@ const SpreadsheetCSV = () => {
                 </div>
                 <div className="px-5 py-[6px] relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-name-color skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative  min-w-5 text-center text-lg font-anton" >
+                  <div className="z-20 relative  min-w-5 text-center text-lg font-anta" >
                     <motion.div key={totalPiloting} className="absolute w-full left-0 right-0 mx-auto top-[-6px]"
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -286,7 +286,7 @@ const SpreadsheetCSV = () => {
                 </div>
                 <div className="px-5  relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-name-color skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative  min-w-5 text-center text-lg font-anton" >
+                  <div className="z-20 relative  min-w-5 text-center text-lg font-anta" >
                     <motion.div key={totalFinished} className="absolute w-full left-0 right-0 mx-auto "
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
