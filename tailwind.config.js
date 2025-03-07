@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'anta': ["Anta", 'sans-serif'],
+        'anton': ["Anton", 'sans-serif'],
+      },
       backgroundImage: {
         'gif': 'var(--bg-gif)', // Bisa digunakan sebagai `bg-custom-bg`
       },

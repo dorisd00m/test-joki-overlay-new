@@ -202,33 +202,21 @@ const SpreadsheetCSV = () => {
                 ">
                   
                 </div>
-                <div className="z-20 relative font-bold" contentEditable="true" onBlur={(e) => handleLabelChange(e) } suppressContentEditableWarning={true}>{textLabel}</div>
+                <div className="z-20 relative font-bold font-anta" contentEditable="true" onBlur={(e) => handleLabelChange(e) } suppressContentEditableWarning={true}>{textLabel}</div>
               </div>
               <div className="px-5 py-2 relative h-[40px]">
                 <div className="z-10 absolute top-0 left-0 w-full h-full bg-name-color skew-x-[-20deg]"></div>
-                <div className="z-20 relative min-w-[200px] text-center">
+                <div className="z-20 relative min-w-[200px] text-center font-anton">
 
                   <AnimatePresence>    
-                    {activeData ? 
-                      <motion.div key={activeData} className="absolute w-full left-0 right-0 mx-auto"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -10 }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        {activeData }
-                      </motion.div>
-                    : 
-                      <motion.div key={activeData} className="absolute w-full left-0 right-0 mx-auto"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -10 }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        BELUM ADA AKUN DIJOKI
-                        
-                      </motion.div>
-                    }
+                    <motion.div key={activeData} className="absolute w-full left-0 right-0 mx-auto"
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -10 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {activeData || "--"}
+                    </motion.div>
 
                     
                   </AnimatePresence>
@@ -244,7 +232,7 @@ const SpreadsheetCSV = () => {
                     transition={{ duration: 0.5}}
                   >
                     <div className="z-10 absolute top-0 left-0 w-full h-full bg-yellow-400 skew-x-[-20deg]"></div>
-                    <div className="z-20 relative text-center">
+                    <div className="z-20 relative text-center font-anta">
                       <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" className="absolute left-0 right-0 mx-auto top-[-30px] size-[30px]">
                         <g fill-rule="evenodd">
                           <g fill="#c8832e">
@@ -274,11 +262,11 @@ const SpreadsheetCSV = () => {
               <div className="flex gap-2">
                 <div className="px-5 py-[6px] relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-blue-900 skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative font-bold" >TOTAL JOKIAN</div>
+                  <div className="z-20 relative font-bold font-anta" >TOTAL JOKIAN</div>
                 </div>
                 <div className="px-5 py-[6px] relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-name-color skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative font-bold min-w-5 text-center text-lg" >
+                  <div className="z-20 relative font-bold min-w-5 text-center text-lg font-anton" >
                     <motion.div key={totalPiloting} className="absolute w-full left-0 right-0 mx-auto top-[-6px]"
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -292,14 +280,14 @@ const SpreadsheetCSV = () => {
                 </div>
               </div>
               <div className="flex gap-2">
-                <div className="px-5 py-[6px] relative h-[30px]">
+                <div className="px-5  relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-blue-900 skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative font-bold" >SELESAI</div>
+                  <div className="z-20 py-[6px] relative font-bold font-anta" >SELESAI</div>
                 </div>
-                <div className="px-5 py-[6px] relative h-[30px]">
+                <div className="px-5  relative h-[30px]">
                   <div className="z-10 absolute top-0 left-0 w-full h-full bg-name-color skew-x-[-20deg] overflow-hidden"></div>
-                  <div className="z-20 relative font-bold min-w-5 text-center text-lg" >
-                    <motion.div key={totalFinished} className="absolute w-full left-0 right-0 mx-auto top-[-6px]"
+                  <div className="z-20 relative font-bold min-w-5 text-center text-lg font-anton" >
+                    <motion.div key={totalFinished} className="absolute w-full left-0 right-0 mx-auto "
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -10 }}
