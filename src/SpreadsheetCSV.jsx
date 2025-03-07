@@ -271,7 +271,7 @@ const SpreadsheetCSV = () => {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -10 }}
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 2 }}
                     >
                       {totalPiloting || "--"}
                     </motion.div>
@@ -291,7 +291,7 @@ const SpreadsheetCSV = () => {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -10 }}
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 2 }}
                     >
                       {totalFinished || "--"}
                     </motion.div>
