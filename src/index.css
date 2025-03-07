@@ -4,5 +4,5 @@
 
 :root {
     --bg-gif: url('https://c.tenor.com/yGgjWLpASOQAAAAC/tenor.gif');
-    --bg-name-color: #000;
+    --bg-name-color: rgba(0,0,0,.8);
 }
